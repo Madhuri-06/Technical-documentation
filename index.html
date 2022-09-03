@@ -1,0 +1,216 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="technicaldocumentation.css">
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>Python</header>
+            <ul>
+                <li><a class="nav-link" href="#Introduction" style="text-decoration:none">Introduction</a></li>
+                <li><a class="nav-link" href="#Hello_world"  style="text-decoration:none" >Hello world</a></li>
+                <li><a class="nav-link" href="#Variables"  style="text-decoration:none">Variables</a></li>
+                <li><a class="nav-link" href="#Declaring_variables" style="text-decoration:none">Declaring variables</a></li>
+                <li><a class="nav-link" href="#Constants"  style="text-decoration:none">Constants</a></li>
+                <li><a class="nav-link" href="#Data_types"  style="text-decoration:none">Data types</a></li>
+                <li><a class="nav-link" href="#Lists"  style="text-decoration:none">Lists</a></li>
+                <li><a class="nav-link" href="#Tuples"  style="text-decoration:none">Tuples</a></li>
+                <li><a class="nav-link" href="#Dictionaries"  style="text-decoration:none">Dictionaries</a></li>
+                <li><a class="nav-link" href="#Sets"  style="text-decoration:none">Sets</a></li>
+                <li><a class="nav-link" href="#Libraries_and_Functions"  style="text-decoration:none">Libraries and Functions</a></li>
+                <li><a class="nav-link" href="#Reference"  style="text-decoration:none">Reference</a></li>
+ </ul>
+</nav>
+<main id="main-doc">
+    <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+            <p>
+Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+It is used for:web development (server-side),software development, mathematics,system scripting.
+<ul>
+    <li>Python can be used on a server to create web applications.</li>
+<li>Python can be used alongside software to create workflows.</li>
+<li>Python can connect to database systems. It can also read and modify files.</li>
+<li>Python can be used to handle big data and perform complex mathematics.</li>
+<li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+</ul>
+            </p>
+        </article>
+    </section>
+    <section class="main-section" id="Hello_world">
+        <header>Hello world</header>
+        <article>
+        <p>
+            To get started with writing Python, open the Scratchpad and write your first "Hello world" Python code:
+            <code>
+                print("Hello wrold")
+            </code>
+            Select the code in the pad and hit Ctrl+R to watch it unfold in your Terminal!
+        </p>
+    </article>
+    </section>
+    <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <article>
+            <p>Python Variable is containers which store values. Python is not “statically typed”. We do not need to declare variables before using them or declare their type. A variable is created the moment we first assign a value to it. A Python variable is a name given to a memory location. It is the basic unit of storage in a program</p>
+        <p>Example:
+            <code># An integer assignment
+                age = 45
+                 
+                # A floating point
+                salary = 1456.8
+                 
+                # A string
+                name = "John"
+                 
+                print(age)
+                print(salary)
+                print(name)</code>
+        </p>
+        </article>
+    </section>
+    <section class="main-section" id="Declaring_variables">
+        <header>Declaring Variables</header>
+        <article>
+            <p>
+                In Python, we need not declare a variable with some specific data type.
+Python has no command for declaring a variable. A variable is created when some value is assigned to it. The value assigned to a variable determines the data type of that variable.
+Thus, declaring a variable in Python is very simple.
+<ul>
+<li>Just name the variable</li>
+<li>Assign the required value to it</li>
+<li>The data type of the variable will be automatically determined</li>
+</ul>
+Example:
+<code>
+x=2
+print(x)
+print(type(x))
+</code>
+            </p>
+        </article>
+    </section>
+    <section class="main-section" id="Constants">
+        <header>Constants</header>
+        <article>
+            <p>
+                In programming, the term constant refers to names representing values that don’t change during a program’s execution. Constants are a fundamental concept in programming, and Python developers use them in many cases. However, Python doesn’t have a dedicated syntax for defining constants. In practice, Python constants are just variables that never change.
+
+                To prevent programmers from reassigning a name that’s supposed to hold a constant, the Python community has adopted a naming convention: use uppercase letters. For every Pythonista, it’s essential to know what constants are, as well as why and when to use them.
+            </p>
+        </article>
+    </section>
+    <section class="main-section" id="Data_types">
+        <header>Data types</header>
+        <article>
+            <p>
+                Data types are the classification or categorization of data items. It represents the kind of value that tells what operations can be performed on a particular data. Since everything is an object in Python programming, data types are actually classes and variables are instance (object) of these classes.
+            </p>
+            <img id="data-types" src="https://media.geeksforgeeks.org/wp-content/uploads/20191023173512/Python-data-structure.jpg"></img>
+        </article>
+    </section>
+    <section class="main-section" id="Lists">
+    <header>Lists</header>
+    <article>
+        <p>
+            A list in Python is used to store the sequence of various types of data. Python lists are mutable type its mean we can modify its element after it created. However, Python consists of six data-types that are capable to store the sequences, but the most common and reliable type is the list.
+
+A list can be defined as a collection of values or items of different types. The items in the list are separated with the comma (,) and enclosed with the square brackets [].
+</p>
+<p>
+    A list can be define as below
+<code>
+L1 = ["John", 102, "USA"]    
+L2 = [1, 2, 3, 4, 5, 6]  </code> 
+</p>
+    </article>
+    </section>
+    <section class="main-section" id="Tuples">
+        <header>Tuples</header>
+        <article>
+           <p>
+            Tuples are used to store multiple items in a single variable.
+
+Tuple is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Set, and Dictionary, all with different qualities and usage.
+
+A tuple is a collection which is ordered and unchangeable.
+
+Tuples are written with round brackets.
+A tuple is a collection of objects which ordered and immutable. Tuples are sequences, just like lists. The differences between tuples and lists are, the tuples cannot be changed unlike lists and tuples use parentheses, whereas lists use square brackets.
+
+Creating a tuple is as simple as putting different comma-separated values. Optionally you can put these comma-separated values between parentheses also. 
+           </p>
+           <p>Creating Tuples
+            <code>
+                var = ("Geeks", "for", "Geeks")
+print(var)
+            </code>
+           </p>
+ </article>
+    </section>
+    <section class="main-section" id="Dictionaries">
+        <header>Dictionaries</header>
+        <article>
+            <p>
+                Each key is separated from its value by a colon (:), the items are separated by commas, and the whole thing is enclosed in curly braces. An empty dictionary without any items is written with just two curly braces, like this: {}.
+
+Keys are unique within a dictionary while values may not be. The values of a dictionary can be of any type, but the keys must be of an immutable data type such as strings, numbers, or tuples.
+            </p>
+            <p>
+                Accessing values of Dictionaries
+                <code>
+                    dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}
+print "dict['Name']: ", dict['Name']
+print "dict['Age']: ", dict['Age']
+                </code>
+            </p>
+        </article>
+    </section>
+    <section class="main-section" id="Sets">
+        <header>Sets</header>
+        <article>
+                <p>
+                    The major advantage of using a set, as opposed to a list, is that it has a highly optimized method for checking whether a specific element is contained in the set. This is based on a data structure known as a hash table. Since sets are unordered, we cannot access items using indexes like we do in lists.The sets in python are typically used for mathematical operations like union, intersection, difference and complement etc. We can create a set, access it’s elements and carry out these mathematical operations as shown below.
+                </p>
+                <p>Creating a Set<code>Days=set(["Mon","Tue","Wed","Thu","Fri","Sat","Sun"])
+                    Months={"Jan","Feb","Mar"}
+                    Dates={21,22,17}
+                    print(Days)
+                    print(Months)
+                    print(Dates)</code></p>
+        </article>
+    </section>
+<section class="main-section" id="Libraries_and_Functions">
+    <header>Libraries and Functions</header>
+    <article>
+        <p>Libraries</p>
+          <p>
+            Normally, a library is a collection of books or is a room or place where many books are stored to be used later. Similarly, in the programming world, a library is a collection of precompiled codes that can be used later on in a program for some specific well-defined operations. Other than pre-compiled codes, a library may contain documentation, configuration data, message templates, classes, and values, etc.
+
+A Python library is a collection of related modules. It contains bundles of code that can be used repeatedly in different programs. It makes Python Programming simpler and convenient for the programmer. As we don’t need to write the same code again and again for different programs. Python libraries play a very vital role in fields of Machine Learning, Data Science, Data Visualization, etc.
+          </p>
+          <p>Working of Python Library</p>
+
+           <p> As is stated above, a Python library is simply a collection of codes or modules of codes that we can use in a program for specific operations. We use libraries so that we don’t need to write the code again in our program that is already available. But how it works. Actually, in the MS Windows environment, the library files have a DLL extension (Dynamic Load Libraries). When we link a library with our program and run that program, the linker automatically searches for that library. It extracts the functionalities of that library and interprets the program accordingly. That’s how we use the methods of a library in our program. We will see further, how we bring in the libraries in our Python programs.</p>
+    <p>Functions</p>
+    <p>Python Functions is a block of statements that return the specific task.
+
+        The idea is to put some commonly or repeatedly done tasks together and make a function so that instead of writing the same code again and again for different inputs, we can do the function calls to reuse code contained in it over and over again. </p>
+        </article>
+</section>
+<section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+        <ul>
+            <li>
+            All the Documentation in this page is taken form
+            <a href="https://www.w3schools.com/python/">W3 schools</a>
+            </li>
+        </ul>
+    
+ </article>
+    </section>
+</main>
+    </body>
+</html>
